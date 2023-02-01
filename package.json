@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedeRacedo/Proyecto3Tienda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedeRacedo/Proyecto3Tienda/issues"
+  },
+  "homepage": "https://github.com/FedeRacedo/Proyecto3Tienda#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

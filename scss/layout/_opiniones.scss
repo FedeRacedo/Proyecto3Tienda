@@ -1,0 +1,82 @@
+    /*OPINIONES*/
+    .portadaopiniones {
+        background-image: url(../assets/fondoSeccion.jpg) ;
+        background-size: cover;
+        width: 100%;
+        height: 90vh; /*Con estas propiedades les voy a dar tamaño a la imagen , width: ancho. height: alto.*/
+        font-family: $font-main;
+        background-position: center;
+        background-repeat: no-repeat;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: space-around;
+        object-fit: cover;
+    }
+
+    .tituloOpiniones {
+        font-size: 60px;
+        padding: 245px 50px;
+    }
+
+    .opinionesTitulo{
+        background-color: #449e9e;
+        color: #000;
+        font-size: 45px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: $font-main;
+    }
+
+    .opiniones {
+        background-image: linear-gradient( #449e9e, #ffff);
+        padding: 10px 10px;
+        display: grid; 
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+
+    .opinion {
+        background-color: #ffff;
+        text-align: center;
+        font-family: $font-main;
+        border: 1px solid #000;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .o1{
+        background-color: #63a046;
+    }
+
+    .o2{
+        background-color: #bfd11c;
+    }
+
+    .o3{
+        background-color: #14cedb;
+    }
+
+    .o4{
+        background-color: #d48e8e;
+    }
+
+    .o5{
+        background-color: #6652d6;
+    }
+
+    .o6{
+        background-color: #c92103;
+    }
+
+    .fondoProducto {
+        font-family: $font-main;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 75px;
+        font-size: 40px;
+    }
+
+    /*opiniones img*/

@@ -1,0 +1,104 @@
+    /*Empezamos a trabajar nuestros productos*/
+
+    .nuestrosProductos{
+        background-image: url(../assets/fondoSeccion.jpg);
+        width: 100%;
+        height: 90vh; 
+        font-family: $font-main;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tituloProductos {
+        font-size: 60px;
+        padding: 245px 50px;
+    }
+
+        /*cree el contenedor de las tarjetas*/
+
+    .tituloTarjetas {
+        font-family: $font-main;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 75px;
+        font-size: 40px;
+    }
+    
+    .tarjetas {
+        background-color: #274250ee;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        display: flex; /*me da el poder de modificar las cartas*/
+        flex-direction: row;
+        justify-content: space-around; 
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+
+    /*caracterise el fondo de las tarjetas*/
+    .tarjeta { 
+        background-color: #f1faffee;
+        width: 25%;
+        min-height: 300px;
+        font-family: $font-main;
+        font-size: 25px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta:hover { 
+        background-color: #c4b6d6ee;
+        transform: scale(1.05, 1.05);
+    }
+
+    /*modifije la imagen de la tarjeta*/
+    .tarjeta img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /*lo que tenia adentro la tarjeta*/
+    .descripcionTarjeta {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /*el boton de la tarjeta*/
+    .descripcionTarjeta a {
+        color: #e77f7fee;
+        background-color: $color-main;
+        width: 100px;
+        padding: 10px;
+        align-self: flex-end; 
+        text-align: center; 
+    }
+
+    .precio {
+        padding: 10px;
+        border-top: 1px solid #c02020ee;
+        border-bottom: 1px solid #a02525ee;
+    }
+
+    /*seguimos con la otra seccion OFERTAS*/
+    .ofertas {
+        background-image: radial-gradient(rgba(62, 141, 155, 0.973), rgb(134, 80, 80)); /*Nuevo efecto de fondo*/
+        display: flex; /*me da el poder de modificar las cartas*/
+        flex-direction: row;
+        justify-content: space-around; /*con esta pripoedad acomode las cartas*/
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }

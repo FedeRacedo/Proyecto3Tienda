@@ -1,0 +1,18 @@
+//import de base
+@import "./base/reset";
+@import "./base/vars";
+
+//import componets
+@import "./componets/heroSeccion";
+@import "./componets/header";
+@import "./componets/footer";
+@import "./componets/heroSeccion2";
+@import "./componets/heroSeccion3";
+@import "./componets/heroSeccion4";
+
+//import layout 
+@import "./layout/index";
+@import "./layout/contactos";
+@import "./layout/opiniones";
+@import "./layout/productos";
+@import "./layout/medias";

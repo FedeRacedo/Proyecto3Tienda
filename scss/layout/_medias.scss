@@ -1,0 +1,317 @@
+/*MEDIA*/
+
+@media only screen and (min-width:320px) {
+
+    .header {
+        font-size: 28px;
+    }
+
+    /*Tomamos las el nav y las listas*/
+    nav ul {
+        flex-direction: column;
+    }
+
+    /*SECCION*/
+    .seccionTitulo {
+        font-size: 25px;
+    }
+
+    .seccionDiv p {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    /*SECCION 2*/
+    .modeloSeccion2 {
+        width: 225px;
+    }
+
+    /*FONDO*/
+    .fondo {
+        height: 100px;
+    }
+
+    /*SECCION 3*/
+    .productosDestacados{
+        width: 100%;
+    }
+
+    /*CONTACTOS*/
+
+    .formularios {
+        flex-direction: column;
+    }
+
+    .formularios img {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%; 
+    }
+
+    /*UBICACION*/
+
+    .ubicacion {
+        width: 90%;
+    }
+
+    .ubicacion iframe  {
+        width: 100%; 
+    }
+
+    .ubicacion h2 {
+        font-size: 25px;
+    }
+
+    .ubicacion p {
+        font-size: 20px;
+    }
+    /*PRODUCTOS*/
+    .tituloTarjetas {
+        padding: 27px;
+        font-size: 25px;
+    }
+
+    .tarjetas {
+        width: 100%;
+        padding: 25px; 
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .descripcionTarjeta {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    /*OPINIONES*/
+
+    .opiniones {
+        grid-template-columns: auto;
+    }
+
+    .fondoProducto{
+        padding: 27px;
+        font-size: 25px;
+    }
+}
+
+
+@media only screen and (min-width:480px) {
+    .header {
+        font-size: 28px;
+    }
+
+    /*Tomamos las el nav y las listas*/
+    nav ul {
+        flex-direction: column;
+    }
+
+    /*SECCION*/
+    .seccionTitulo {
+        font-size: 32px;
+    }
+
+    .seccionDiv p {
+        font-size: 29px;
+        width: 100%;
+    }
+
+    /*SECCION 2*/
+    .modeloSeccion2 {
+        width: 400px;
+    }
+
+    /*FONDO*/
+    .fondo {
+        height: 125px;
+    }
+
+    /*SECCION 3*/
+    .productosDestacados{
+        width: 50%;
+    }
+
+    .ubicacion {
+        width: 95%;
+    }
+
+    /*PRODUCTOS*/
+    .tituloTarjetas {
+        padding: 35px;
+        font-size: 30px;
+    }
+
+    .tarjetas {
+        width: 100%;
+        padding: 25px; 
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .tarjeta {
+        width: 65%;
+    }
+
+    /*OPINIONES*/
+
+    .opiniones {
+        grid-template-columns: auto auto;
+    }
+
+    .fondoProducto {
+        padding: 35px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 775px) {
+    .header {
+        font-size: 32px;
+    }
+
+    /*Tomamos las el nav y las listas*/
+    nav ul {
+        flex-direction: row;
+    }
+
+    /*SECCION*/
+    .seccionTitulo {
+        font-size: 40px;
+    }
+
+    .seccionDiv p {
+        font-size: 32px;
+        width: 75%;
+    }
+
+    /*SECCION 2*/
+    .modeloSeccion2 {
+        width: 500px;
+    }
+
+    /*FONDO*/
+    .fondo {
+        height: 155px;
+    }
+
+    /*SECCION 3*/
+    .productosDestacados{
+        width: 35%;
+    }
+
+    /*CONTACTOS*/
+
+    .formularios {
+        flex-direction: row-reverse;
+    }
+
+    .formularios img {
+        padding: 10px;
+        width: 50%;
+    }
+
+    /*UBICACION*/
+
+    .ubicacion {
+        width: 95%;
+    }
+
+    .ubicacion iframe  {
+        width: 75%; 
+    }
+
+    .ubicacion h2 {
+        font-size: 28px;
+    }
+
+    .ubicacion p {
+        font-size: 23px;
+    }
+
+    /*PRODUCTOS*/
+    .tituloTarjetas {
+        padding: 50px;
+        font-size: 35px;
+    }
+
+    .tarjeta {
+        width: 40%;
+    }
+
+    /*OPINIONES*/
+
+    .opiniones {
+        grid-template-columns: auto auto auto;
+    }
+
+    .fondoProducto {
+        padding: 50px;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        font-size: 32px;
+    }
+
+    /*Tomamos las el nav y las listas*/
+    nav ul {
+        flex-direction: row;
+    }
+
+    /*SECCION*/
+    .seccionTitulo {
+        font-size: 45px;
+    }
+
+    .seccionDiv p {
+        font-size: 32px;
+        width: 65%;
+    }
+
+    /*SECCION 2*/
+    .modeloSeccion2 {
+        width: 600px;
+    }
+
+    /*FONDO*/
+    .fondo {
+        height: 200px;
+    }
+
+    /*SECCION 3*/
+    .productosDestacados{
+        width: 25%;
+    }
+
+    .ubicacion h2 {
+        font-size: 30px;
+    }
+
+    .ubicacion p {
+        font-size: 25px;
+    }
+
+    /*PRODUCTOS*/
+    .tituloTarjetas {
+        padding: 70px;
+        font-size: 40px;
+    }
+
+    .tarjeta {
+        width: 25%;
+    }
+
+    .fondoProducto{
+        padding: 70px;
+        font-size: 40px;
+    }
+}

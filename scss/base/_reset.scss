@@ -1,0 +1,24 @@
+/*Descargando el link vamos a traerle una fuente a toda nuestra pagina, llamandola y colocandola con un font-family
+    en nustra class=''*/
+    @font-face {
+        font-family: bebas;
+        src: url(../assets/BebasNeue-Regular.ttf);
+    }
+
+/* Asi siempre voy a empezar mi CSS, estoy reiniciando mi pagina, le saso el maren y el espacio 
+    que nos trae por defecto para despues maniularlo como quiera.*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        /*Nos va a sacar los items que vienen por defecto*/
+    }
