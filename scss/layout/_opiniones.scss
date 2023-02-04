@@ -2,15 +2,14 @@
     .portadaopiniones {
         background-image: url(../assets/fondoSeccion.jpg) ;
         background-size: cover;
-        width: 100%;
-        height: 90vh; /*Con estas propiedades les voy a dar tamaño a la imagen , width: ancho. height: alto.*/
         font-family: $font-main;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include background (center, no-repeat);
         letter-spacing: 1px;
         display: flex;
         justify-content: space-around;
         object-fit: cover;
+
+        @include tamanio (100%,90vh);
     }
 
     .tituloOpiniones {
@@ -23,8 +22,7 @@
         color: #000;
         font-size: 45px;
         padding: 10px;
-        display: flex;
-        flex-direction: row;
+        @include flex (flex, row);
         justify-content: center;
         font-family: $font-main;
     }
@@ -80,3 +78,18 @@
     }
 
     /*opiniones img*/
+
+    .ustedes {
+        background-image: linear-gradient( rgb(69, 69, 128), rgba(241, 239, 241, 0.933));
+        padding: 20px;
+        @include flex (flex, row);
+        justify-content: space-around; 
+        gap: 20px;
+        flex-wrap: wrap;
+
+        @include tamanio (100%,100%);
+    }
+
+    .ustedesOpinion img {
+        width: 100%;
+    }

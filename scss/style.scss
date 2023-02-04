@@ -1,14 +1,12 @@
 //import de base
 @import "./base/reset";
 @import "./base/vars";
+@import "./base/mixin";
 
 //import componets
-@import "./componets/heroSeccion";
 @import "./componets/header";
 @import "./componets/footer";
-@import "./componets/heroSeccion2";
-@import "./componets/heroSeccion3";
-@import "./componets/heroSeccion4";
+
 
 //import layout 
 @import "./layout/index";

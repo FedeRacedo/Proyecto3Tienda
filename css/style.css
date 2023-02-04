@@ -1,28 +1,64 @@
 @charset "UTF-8";
-
 /*Descargando el link vamos a traerle una fuente a toda nuestra pagina, llamandola y colocandola con un font-family
     en nustra class=''*/
 @font-face {
   font-family: bebas;
-  src: url(../assets/BebasNeue-Regular.ttf);
-}
+  src: url(../assets/BebasNeue-Regular.ttf); }
 
 /* Asi siempre voy a empezar mi CSS, estoy reiniciando mi pagina, le saso el maren y el espacio 
     que nos trae por defecto para despues maniularlo como quiera.*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul {
   list-style-type: none;
-  /*Nos va a sacar los items que vienen por defecto*/
-}
+  /*Nos va a sacar los items que vienen por defecto*/ }
+
+/*Cree un mixin para tamanio*/
+/*Cree un mixin para flex*/
+/*Cree un mixin para dos propiedades de background*/
+/*Cree un mixin para organizar el margen y relleno*/
+/*Modifique todas las palabras que tienen la class="resaltar"*/
+.resaltar {
+  color: #c93b3b; }
+
+/*HEADER*/
+.header {
+  font-family: bebas;
+  background-color: #6f9ac7;
+  font-size: 32px; }
+
+/*Tomamos las el nav y las listas*/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  /*me va a centrar mis items*/
+  padding: 10px;
+  width: 100%;
+  height: 100%; }
+
+.headerLinks {
+  color: #131212ee;
+  transition: 0.5s; }
+
+.headerLinks:hover {
+  transform: scale(1, 1.05);
+  color: #fffee1; }
+
+/*FOOTER*/
+.card {
+  font-family: bebas;
+  background-color: rgba(241, 250, 255, 0.933); }
+  .card .card-header {
+    font-size: 32px; }
 
 /*MAIN*/
 /*EMPEZAMOS CON LA PRIMERA PARTE*/
@@ -35,211 +71,16 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   letter-spacing: 1px;
-  font-size: 40px;
-}
-
-.seccion .seccionDiv {
-  display: flex;
-  flex-direction: column;
-  padding: 100px 50px;
-}
-
-.seccion .seccionDiv .seccionTitulo {
-  font-size: 45px;
-}
-
-.seccion .seccionDiv .seccionDiv p {
-  font-size: 30px;
-  width: 65%;
-}
-
-/*Modifique todas las palabras que tienen la class="resaltar"*/
-.resaltar {
-  color: #c93b3b;
-}
-
-/*HEADER*/
-.header {
-  font-family: bebas;
-  background-color: #6f9ac7;
-  font-size: 32px;
-  /*Tomamos las el nav y las listas*/
-}
-
-.header nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-items: center;
-  /*me va a centrar mis items*/
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-}
-
-.header nav ul .headerLinks {
-  color: #131212ee;
-  transition: 0.5s;
-}
-
-.header nav ul .headerLinks:hover {
-  transform: scale(1, 1.05);
-  color: #fffee1;
-}
-
-/*FOOTER*/
-.card {
-  font-family: bebas;
-  background-color: rgba(241, 250, 255, 0.933);
-}
-
-.card .card-header {
-  font-size: 32px;
-}
-
-/*SECCION 2*/
-/*Empezamos a modificar la seccion2*/
-.seccion2 {
-  background-color: rgba(241, 250, 255, 0.933);
-  width: 100%;
-  height: 95vh;
-}
-
-.seccion2 .divSeccion2 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: bebas;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: 100%;
-}
-
-.seccion2 .divSeccion2 .modeloSeccion2 {
-  width: 500px;
-  object-fit: cover;
-}
-
-.seccion2 .divSeccion2 .infoTitulo {
-  font-size: 32px;
-}
-
-.seccion2 .divSeccion2 .nosotros {
-  font-size: 25px;
-}
-
-/*SECCION 3*/
-.seccion3 {
-  background-image: linear-gradient(rgba(241, 250, 255, 0.933), #454580);
-  padding: 20px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  /*me da el poder de modificar las cartas*/
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.seccion3 .productosDestacados {
-  background-color: #f1faffee;
-  width: 25%;
-  min-height: 300px;
-  font-family: bebas;
-  font-size: 25px;
-  transition: 0.5s;
-  display: flex;
-  flex-direction: column;
-}
-
-.seccion3 .productosDestacados .productosDestacados:hover {
-  background: #449e9e;
-  transform: scale(1, 1.05);
-}
-
-.seccion3 .productosDestacados img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.seccion3 .productosDestacados .descripcionDestacada {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.seccion3 .productosDestacados a {
-  color: #131212ee;
-  background-color: #aa3c3cee;
-  width: 100px;
-  padding: 10px;
-  align-self: flex-end;
-  text-align: center;
-}
-
-/*SECCION 4*/
-.nuestrosProductosDestaacados {
-  background-color: rgba(241, 250, 255, 0.933);
-  font-family: bebas;
-  padding: 5px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-}
-
-
-.masNosotros {
-  background-image: linear-gradient(#454580, rgba(241, 250, 255, 0.933));
-  color: #ffff;
-  min-height: 25vh;
-  max-height: 25%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  gap: 10px;
-  padding: 10px;
-}
-
-.masNosotros .informacion {
-  font-family: bebas;
-  font-size: 30px;
-  color: #000;
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-}
-
-.masNosotros .p1 {
-  background-color: #449e9e;
-}
-
-.masNosotros .p2 {
-  background-color: #63a046;
-}
-
-.masNosotros .p3 {
-  background-color: #c4469aee;
-}
-
-.seccionTitulo {
-  font-size: 45px;
-}
-
-.seccionDiv p {
-  font-size: 30px;
-  width: 65%;
-}
+  font-size: 40px; }
+  .seccion .seccionDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px; }
+    .seccion .seccionDiv .seccionTitulo {
+      font-size: 45px; }
+    .seccion .seccionDiv .seccionDiv p {
+      font-size: 30px;
+      width: 65%; }
 
 /*BOTON*/
 .boton {
@@ -255,32 +96,123 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .boton:hover {
   transform: scale(1, 1.05);
-  color: rgba(241, 250, 255, 0.933);
-}
+  color: rgba(241, 250, 255, 0.933); }
 
+/*SECCION 2*/
+/*Empezamos a modificar la seccion2*/
+.seccion2 {
+  background-color: rgba(241, 250, 255, 0.933);
+  width: 100%;
+  height: 100%; }
+  .seccion2 .divSeccion2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: bebas;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%; }
+    .seccion2 .divSeccion2 .modeloSeccion2 {
+      width: 500px;
+      object-fit: cover; }
+    .seccion2 .divSeccion2 .infoTitulo {
+      font-size: 32px; }
+    .seccion2 .divSeccion2 .nosotros {
+      font-size: 25px; }
 
 /*FONDO*/
 .fondo {
   background-image: url(../assets/FondoZapatillas.webp);
   /*coloque el fondo*/
-  width: 100%;
-  height: 200px;
-  /*Le di un ancho y un alto*/
   background-attachment: fixed;
-}
+  /*Le di un ancho y un alto*/
+  width: 100%;
+  height: 100%; }
 
+.nuestrosProductosDestaacados {
+  font-family: bebas;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(241, 250, 255, 0.933); }
+
+.seccion3 {
+  background-image: linear-gradient(rgba(241, 250, 255, 0.933), #454580);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%; }
+  .seccion3 .productosDestacados {
+    background-color: #f1faffee;
+    width: 25%;
+    min-height: 300px;
+    font-family: bebas;
+    font-size: 25px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column; }
+    .seccion3 .productosDestacados img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover; }
+    .seccion3 .productosDestacados .descripcionDestacada {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+    .seccion3 .productosDestacados .descripcionDestacada:hover {
+      background: #449e9e;
+      transform: scale(1, 1.05); }
+    .seccion3 .productosDestacados a {
+      color: #131212ee;
+      background-color: #aa3c3cee;
+      width: 100px;
+      padding: 10px;
+      align-self: flex-end;
+      text-align: center; }
+
+/*SECCION 4*/
+.masNosotros {
+  background-image: linear-gradient(#454580, rgba(241, 250, 255, 0.933));
+  color: #ffff;
+  min-height: 25vh;
+  max-height: 25%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 10px; }
+  .masNosotros .informacion {
+    font-family: bebas;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 40px; }
+  .masNosotros .p1 {
+    background-color: #449e9e; }
+  .masNosotros .p2 {
+    background-color: #63a046; }
+  .masNosotros .p3 {
+    background-color: #c4469aee; }
 
 /*ARANCAMOS CON LA PAGINA CONTACTOS*/
 /*INICIO CONTACTO*/
 .contacto {
   background-image: url(../assets/fondoSeccion.jpg);
-  width: 100%;
-  height: 90vh;
   font-family: bebas;
   background-position: center;
   background-repeat: no-repeat;
@@ -288,12 +220,11 @@ ul {
   letter-spacing: 1px;
   display: flex;
   justify-content: space-around;
-}
-
-.tituloContacto {
-  font-size: 60px;
-  padding: 245px 50px;
-}
+  width: 100%;
+  height: 100%; }
+  .contacto .tituloContacto {
+    font-size: 60px;
+    padding: 245px 50px; }
 
 /*FORMULARIO Y IMG*/
 .formulario {
@@ -302,26 +233,19 @@ ul {
   gap: 10px;
   padding: 10px;
   width: 50%;
-  border-radius: 5px;
-}
-
-.formularioContenedor {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-family: bebas;
-  font-size: 20px;
-}
-
-.formularioContenedor input {
-  padding: 10px;
-  font-family: bebas;
-  border-radius: 5px;
-}
-
-.formularioContenedor textarea {
-  resize: none;
-}
+  border-radius: 5px; }
+  .formulario .formularioContenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: bebas;
+    font-size: 20px; }
+    .formulario .formularioContenedor .formularioContenedor input {
+      padding: 10px;
+      font-family: bebas;
+      border-radius: 5px; }
+    .formulario .formularioContenedor .formularioContenedor textarea {
+      resize: none; }
 
 .formularios {
   background-color: #131212ee;
@@ -330,16 +254,12 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 20px;
-}
-
-.formularios img {
-  padding: 20px;
-  width: 50%;
-  /*tamaño*/
-  height: 100%;
-  object-fit: cover;
-}
+  padding: 20px; }
+  .formularios .formularios img {
+    padding: 20px;
+    object-fit: cover;
+    width: 50%;
+    height: 50%; }
 
 /*Ubicacion*/
 .ubicacion {
@@ -353,28 +273,18 @@ ul {
   width: 95%;
   gap: 10px;
   justify-content: center;
-  align-items: center;
-}
-
-.ubicacion iframe {
-  width: 70%;
-}
-
-.ubicacion h2 {
-  font-size: 32px;
-}
-
-.ubicacion p {
-  font-size: 25px;
-}
+  align-items: center; }
+  .ubicacion .ubicacion iframe {
+    width: 70%; }
+  .ubicacion .ubicacion h2 {
+    font-size: 32px; }
+  .ubicacion .ubicacion p {
+    font-size: 25px; }
 
 /*OPINIONES*/
 .portadaopiniones {
   background-image: url(../assets/fondoSeccion.jpg);
   background-size: cover;
-  width: 100%;
-  height: 90vh;
-  /*Con estas propiedades les voy a dar tamaño a la imagen , width: ancho. height: alto.*/
   font-family: bebas;
   background-position: center;
   background-repeat: no-repeat;
@@ -382,12 +292,12 @@ ul {
   display: flex;
   justify-content: space-around;
   object-fit: cover;
-}
+  width: 100%;
+  height: 100%; }
 
 .tituloOpiniones {
   font-size: 60px;
-  padding: 245px 50px;
-}
+  padding: 245px 50px; }
 
 .opinionesTitulo {
   background-color: #449e9e;
@@ -397,16 +307,14 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-family: bebas;
-}
+  font-family: bebas; }
 
 .opiniones {
   background-image: linear-gradient(#449e9e, #ffff);
   padding: 10px 10px;
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .opinion {
   background-color: #ffff;
@@ -414,32 +322,25 @@ ul {
   font-family: bebas;
   border: 1px solid #000;
   font-size: 25px;
-  padding: 10px;
-}
+  padding: 10px; }
 
 .o1 {
-  background-color: #63a046;
-}
+  background-color: #63a046; }
 
 .o2 {
-  background-color: #bfd11c;
-}
+  background-color: #bfd11c; }
 
 .o3 {
-  background-color: #14cedb;
-}
+  background-color: #14cedb; }
 
 .o4 {
-  background-color: #d48e8e;
-}
+  background-color: #d48e8e; }
 
 .o5 {
-  background-color: #6652d6;
-}
+  background-color: #6652d6; }
 
 .o6 {
-  background-color: #c92103;
-}
+  background-color: #c92103; }
 
 .fondoProducto {
   font-family: bebas;
@@ -447,15 +348,26 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 75px;
-  font-size: 40px;
-}
+  font-size: 40px; }
 
 /*opiniones img*/
+.ustedes {
+  background-image: linear-gradient(#454580, rgba(241, 239, 241, 0.933));
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%; }
+
+.ustedesOpinion img {
+  width: 100%; }
+
 /*Empezamos a trabajar nuestros productos*/
 .nuestrosProductos {
   background-image: url(../assets/fondoSeccion.jpg);
-  width: 100%;
-  height: 90vh;
   font-family: bebas;
   background-position: center;
   background-repeat: no-repeat;
@@ -463,12 +375,11 @@ ul {
   letter-spacing: 1px;
   display: flex;
   justify-content: space-around;
-}
-
-.tituloProductos {
-  font-size: 60px;
-  padding: 245px 50px;
-}
+  width: 100%;
+  height: 100%; }
+  .nuestrosProductos .tituloProductos {
+    font-size: 60px;
+    padding: 245px 50px; }
 
 /*cree el contenedor de las tarjetas*/
 .tituloTarjetas {
@@ -477,21 +388,18 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 75px;
-  font-size: 40px;
-}
+  font-size: 40px; }
 
 .tarjetas {
   background-color: #274250ee;
   padding: 20px;
-  height: 100%;
-  width: 100%;
   display: flex;
-  /*me da el poder de modificar las cartas*/
   flex-direction: row;
   justify-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
-}
+  width: 100%;
+  height: 100%; }
 
 /*caracterise el fondo de las tarjetas*/
 .tarjeta {
@@ -502,28 +410,24 @@ ul {
   font-size: 25px;
   transition: 0.5s;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .tarjeta:hover {
   background-color: #c4b6d6ee;
-  transform: scale(1.05, 1.05);
-}
+  transform: scale(1.05, 1.05); }
 
 /*modifije la imagen de la tarjeta*/
 .tarjeta img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
-}
+  object-fit: cover; }
 
 /*lo que tenia adentro la tarjeta*/
 .descripcionTarjeta {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
+  gap: 10px; }
 
 /*el boton de la tarjeta*/
 .descripcionTarjeta a {
@@ -532,336 +436,208 @@ ul {
   width: 100px;
   padding: 10px;
   align-self: flex-end;
-  text-align: center;
-}
+  text-align: center; }
 
 .precio {
   padding: 10px;
   border-top: 1px solid #c02020ee;
-  border-bottom: 1px solid #a02525ee;
-}
+  border-bottom: 1px solid #a02525ee; }
 
 /*seguimos con la otra seccion OFERTAS*/
 .ofertas {
   background-image: radial-gradient(rgba(62, 141, 155, 0.973), #865050);
   /*Nuevo efecto de fondo*/
   display: flex;
-  /*me da el poder de modificar las cartas*/
   flex-direction: row;
   justify-content: space-around;
   /*con esta pripoedad acomode las cartas*/
   gap: 20px;
   flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
   padding: 20px;
-}
+  width: 100%;
+  height: 100%; }
 
 /*MEDIA*/
 @media only screen and (min-width: 320px) {
   .header {
-    font-size: 28px;
-  }
-
+    font-size: 28px; }
   /*Tomamos las el nav y las listas*/
   nav ul {
-    flex-direction: column;
-  }
-
+    flex-direction: column; }
   /*SECCION*/
   .seccionTitulo {
-    font-size: 25px;
-  }
-
+    font-size: 25px; }
   .seccionDiv p {
     font-size: 22px;
-    width: 100%;
-  }
-
+    width: 100%; }
   /*SECCION 2*/
   .modeloSeccion2 {
-    width: 225px;
-  }
-
+    width: 225px; }
   /*FONDO*/
   .fondo {
-    height: 100px;
-  }
-
+    height: 100px; }
   /*SECCION 3*/
   .productosDestacados {
-    width: 100%;
-  }
-
+    width: 100%; }
   /*CONTACTOS*/
   .formularios {
-    flex-direction: column;
-  }
-
+    flex-direction: column; }
   .formularios img {
     padding: 10px;
-    width: 100%;
-  }
-
+    width: 100%; }
   .formulario {
-    width: 100%;
-  }
-
+    width: 100%; }
   /*UBICACION*/
   .ubicacion {
-    width: 90%;
-  }
-
+    width: 90%; }
   .ubicacion iframe {
-    width: 100%;
-  }
-
+    width: 100%; }
   .ubicacion h2 {
-    font-size: 25px;
-  }
-
+    font-size: 25px; }
   .ubicacion p {
-    font-size: 20px;
-  }
-
+    font-size: 20px; }
   /*PRODUCTOS*/
   .tituloTarjetas {
     padding: 27px;
-    font-size: 25px;
-  }
-
+    font-size: 25px; }
   .tarjetas {
     width: 100%;
     padding: 25px;
     flex-direction: column;
-    gap: 25px;
-  }
-
+    gap: 25px; }
   .tarjeta {
-    width: 100%;
-  }
-
+    width: 100%; }
   .descripcionTarjeta {
     padding: 5px;
-    gap: 5px;
-  }
-
+    gap: 5px; }
   /*OPINIONES*/
   .opiniones {
-    grid-template-columns: auto;
-  }
-
+    grid-template-columns: auto; }
   .fondoProducto {
     padding: 27px;
-    font-size: 25px;
-  }
-}
+    font-size: 25px; } }
 
 @media only screen and (min-width: 480px) {
   .header {
-    font-size: 28px;
-  }
-
+    font-size: 28px; }
   /*Tomamos las el nav y las listas*/
   nav ul {
-    flex-direction: column;
-  }
-
+    flex-direction: column; }
   /*SECCION*/
   .seccionTitulo {
-    font-size: 32px;
-  }
-
+    font-size: 32px; }
   .seccionDiv p {
     font-size: 29px;
-    width: 100%;
-  }
-
+    width: 100%; }
   /*SECCION 2*/
   .modeloSeccion2 {
-    width: 400px;
-  }
-
+    width: 400px; }
   /*FONDO*/
   .fondo {
-    height: 125px;
-  }
-
+    height: 125px; }
   /*SECCION 3*/
   .productosDestacados {
-    width: 50%;
-  }
-
+    width: 50%; }
   .ubicacion {
-    width: 95%;
-  }
-
+    width: 95%; }
   /*PRODUCTOS*/
   .tituloTarjetas {
     padding: 35px;
-    font-size: 30px;
-  }
-
+    font-size: 30px; }
   .tarjetas {
     width: 100%;
     padding: 25px;
     flex-direction: row;
-    gap: 25px;
-  }
-
+    gap: 25px; }
   .tarjeta {
-    width: 65%;
-  }
-
+    width: 65%; }
   /*OPINIONES*/
   .opiniones {
-    grid-template-columns: auto auto;
-  }
-
+    grid-template-columns: auto auto; }
   .fondoProducto {
     padding: 35px;
-    font-size: 30px;
-  }
-}
+    font-size: 30px; } }
 
 @media only screen and (min-width: 775px) {
   .header {
-    font-size: 32px;
-  }
-
+    font-size: 32px; }
   /*Tomamos las el nav y las listas*/
   nav ul {
-    flex-direction: row;
-  }
-
+    flex-direction: row; }
   /*SECCION*/
   .seccionTitulo {
-    font-size: 40px;
-  }
-
+    font-size: 40px; }
   .seccionDiv p {
     font-size: 32px;
-    width: 75%;
-  }
-
+    width: 75%; }
   /*SECCION 2*/
   .modeloSeccion2 {
-    width: 500px;
-  }
-
+    width: 500px; }
   /*FONDO*/
   .fondo {
-    height: 155px;
-  }
-
+    height: 155px; }
   /*SECCION 3*/
   .productosDestacados {
-    width: 35%;
-  }
-
+    width: 35%; }
   /*CONTACTOS*/
   .formularios {
-    flex-direction: row-reverse;
-  }
-
+    flex-direction: row-reverse; }
   .formularios img {
     padding: 10px;
-    width: 50%;
-  }
-
+    width: 50%; }
   /*UBICACION*/
   .ubicacion {
-    width: 95%;
-  }
-
+    width: 95%; }
   .ubicacion iframe {
-    width: 75%;
-  }
-
+    width: 75%; }
   .ubicacion h2 {
-    font-size: 28px;
-  }
-
+    font-size: 28px; }
   .ubicacion p {
-    font-size: 23px;
-  }
-
+    font-size: 23px; }
   /*PRODUCTOS*/
   .tituloTarjetas {
     padding: 50px;
-    font-size: 35px;
-  }
-
+    font-size: 35px; }
   .tarjeta {
-    width: 40%;
-  }
-
+    width: 40%; }
   /*OPINIONES*/
   .opiniones {
-    grid-template-columns: auto auto auto;
-  }
-
+    grid-template-columns: auto auto auto; }
   .fondoProducto {
     padding: 50px;
-    font-size: 35px;
-  }
-}
+    font-size: 35px; } }
 
 @media only screen and (min-width: 1200px) {
   .header {
-    font-size: 32px;
-  }
-
+    font-size: 32px; }
   /*Tomamos las el nav y las listas*/
   nav ul {
-    flex-direction: row;
-  }
-
+    flex-direction: row; }
   /*SECCION*/
   .seccionTitulo {
-    font-size: 45px;
-  }
-
+    font-size: 45px; }
   .seccionDiv p {
     font-size: 32px;
-    width: 65%;
-  }
-
+    width: 65%; }
   /*SECCION 2*/
   .modeloSeccion2 {
-    width: 600px;
-  }
-
+    width: 600px; }
   /*FONDO*/
   .fondo {
-    height: 200px;
-  }
-
+    height: 200px; }
   /*SECCION 3*/
   .productosDestacados {
-    width: 25%;
-  }
-
+    width: 25%; }
   .ubicacion h2 {
-    font-size: 30px;
-  }
-
+    font-size: 30px; }
   .ubicacion p {
-    font-size: 25px;
-  }
-
+    font-size: 25px; }
   /*PRODUCTOS*/
   .tituloTarjetas {
     padding: 70px;
-    font-size: 40px;
-  }
-
+    font-size: 40px; }
   .tarjeta {
-    width: 25%;
-  }
-
+    width: 25%; }
   .fondoProducto {
     padding: 70px;
-    font-size: 40px;
-  }
-}
+    font-size: 40px; } }

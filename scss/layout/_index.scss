@@ -1,10 +1,31 @@
-.seccionTitulo {
-    font-size: 45px;
-}
+/*MAIN*/
 
-.seccionDiv p {
-    font-size: 30px;
-    width: 65%;
+/*EMPEZAMOS CON LA PRIMERA PARTE*/
+.seccion {
+    background-image: url(../assets/fondoSeccion.jpg);
+    width: 100%;
+    height: 90vh;
+    font-family: $font-main;
+    @include background (center, no-repeat);
+    background-size: cover;
+    letter-spacing: 1px;
+    font-size: 40px;
+
+    .seccionDiv {
+        @include flex (flex, column);
+        padding: 100px 50px;
+
+        .seccionTitulo {
+            font-size: 45px; 
+        }
+        
+        .seccionDiv p {
+            font-size: 30px;
+            width: 65%; 
+        }
+        
+    }
+
 }
 
 /*BOTON*/
@@ -18,8 +39,7 @@
     border-radius: 5px;
     /*Le di un pequeño borde a la caja*/
     font-family: $font-main;
-    display: flex;
-    flex-direction: row;
+    @include flex (flex, row);
     justify-content: center;
     align-items: center;
 }
@@ -30,117 +50,107 @@
 }
 
 /*SECCION 2*/
-
 /*Empezamos a modificar la seccion2*/
-
 .seccion2 {
     background-color: rgba(241, 250, 255, 0.933);
-    width: 100%;
-    height: 95vh;
-}
-
-.divSeccion2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-family: $font-main;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-}
-
-.modeloSeccion2 {
-    width: 500px;
-    object-fit: cover;
     
-}
+    @include tamanio (100%,95vh);
 
-.infoTitulo {
-    font-size: 32px;
-}
+    .divSeccion2 {
+        @include flex (flex, column);
+        gap: 10px;
+        font-family: bebas;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
 
-.nosotros {
-    font-size: 25px;
+        .modeloSeccion2 {
+            width: 500px;
+            object-fit: cover;
+        }
+        
+        .infoTitulo {
+            font-size: 32px;
+        }
+        
+        .nosotros {
+            font-size: 25px;
+        }
+    }
 }
 
 /*FONDO*/
 
 .fondo {
     background-image: url(../assets/FondoZapatillas.webp); /*coloque el fondo*/
-    width: 100%;
-    height: 200px;
-    /*Le di un ancho y un alto*/
     background-attachment: fixed;
+
+    /*Le di un ancho y un alto*/
+    @include tamanio (100%,200px);
 } 
 
-/*seccion 3*/
 .nuestrosProductosDestaacados {
-    background-color: rgba(241, 250, 255, 0.933);
     font-family: $font-main;
-    padding: 5px;
-    width: 100%;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 25px;
-}      
-
+    background-color: rgba(241, 250, 255, 0.933);
+}
 
 .seccion3 {
-    background-image: linear-gradient(  rgba(241, 250, 255, 0.933), rgb(69, 69, 128));
+    background-image: linear-gradient(rgba(241, 250, 255, 0.933), #454580);
     padding: 20px;
-    height: 100%;
-    width: 100%;
-    display: flex; /*me da el poder de modificar las cartas*/
-    flex-direction: row;
-    justify-content: space-around; 
+    @include flex (flex, row);
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
-}
 
+    @include tamanio (100%,100%);
 
-.productosDestacados{
-    background-color: #f1faffee;
-    width: 25%;
-    min-height: 300px;
-    font-family: $font-main;
-    font-size: 25px;
-    transition: 0.5s;
-    display: flex;
-    flex-direction: column;
-}
+    .productosDestacados {
+        background-color: #f1faffee;
+        width: 25%;
+        min-height: 300px;
+        font-family: bebas;
+        font-size: 25px;
+        transition: 0.5s;
+        @include flex (flex, column);
 
-.productosDestacados:hover {
-    background: #449e9e;
-    transform: scale(1, 1.05);
-}
+        
 
-.productosDestacados img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;  
+        }
 
-.descripcionDestacada {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+        .descripcionDestacada {
+            padding: 10px;
+            @include flex (flex, column);
+            gap: 10px;
+        }
 
-.descripcionDestacada a {
-    color: $color-main;
-    background-color: #aa3c3cee;
-    width: 100px; 
-    padding: 10px;
-    align-self: flex-end; 
-    text-align: center; 
+        .descripcionDestacada:hover {
+            background: #449e9e;
+            transform: scale(1, 1.05);
+            }
+
+        a {
+            color: #131212ee;
+            background-color: #aa3c3cee;
+            width: 100px;
+            padding: 10px;
+            align-self: flex-end;
+            text-align: center;
+        }
+    }
+
 }
 
 /*SECCION 4*/
 .masNosotros {
-    background-image: linear-gradient( rgb(69, 69, 128), rgba(241, 250, 255, 0.933));
+    background-image: linear-gradient(#454580, rgba(241, 250, 255, 0.933));
     color: #ffff;
     min-height: 25vh;
     max-height: 25%;
@@ -149,29 +159,29 @@
     grid-template-rows: auto;
     gap: 10px;
     padding: 10px;
-}
 
-.informacion {
-    font-family: $font-main; 
-    font-size: 30px;
-    color: #000;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-}
+    .informacion {
+        font-family: bebas;
+        font-size: 30px;
+        color: #000;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+    }
 
-.p1 {
-    background-color: #449e9e;
-}
-
-.p2 {
-    background-color: #63a046;
-}
-
-.p3 {
-    background-color: #c4469aee;
+    .p1 {
+        background-color: #449e9e;
+    }
+    
+    .p2 {
+        background-color: #63a046;
+    }
+    
+    .p3 {
+        background-color: #c4469aee;
+    }
 }

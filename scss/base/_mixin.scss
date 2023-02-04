@@ -1,0 +1,25 @@
+/*Cree un mixin para tamanio*/
+@mixin tamanio($alto, $ancho) {
+
+    width: $alto;
+    height: $alto;
+
+}
+
+/*Cree un mixin para flex*/
+@mixin flex($d, $dir) {
+    display: $d;
+    flex-direction: $dir;
+}
+
+/*Cree un mixin para dos propiedades de background*/
+@mixin background ($position, $repeat) {
+    background-position: $position;
+    background-repeat: $repeat;
+}
+
+/*Cree un mixin para organizar el margen y relleno*/
+@mixin margen ($margen, $relleno) {
+    margin: $margen;
+    padding: $relleno;
+}
