@@ -64,11 +64,6 @@
         align-items: center;
         padding: 10px;
         width: 100%;
-
-        .modeloSeccion2 {
-            width: 500px;
-            object-fit: cover;
-        }
         
         .infoTitulo {
             font-size: 32px;
@@ -78,6 +73,11 @@
             font-size: 25px;
         }
     }
+}
+
+    .modeloSeccion2 {
+    width: 500px;
+    object-fit: cover;
 }
 
 /*FONDO*/

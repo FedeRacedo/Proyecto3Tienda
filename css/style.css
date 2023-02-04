@@ -117,13 +117,14 @@ nav ul {
     align-items: center;
     padding: 10px;
     width: 100%; }
-    .seccion2 .divSeccion2 .modeloSeccion2 {
-      width: 500px;
-      object-fit: cover; }
     .seccion2 .divSeccion2 .infoTitulo {
       font-size: 32px; }
     .seccion2 .divSeccion2 .nosotros {
       font-size: 25px; }
+
+.modeloSeccion2 {
+  width: 500px;
+  object-fit: cover; }
 
 /*FONDO*/
 .fondo {
